@@ -1,0 +1,22 @@
+{
+  "sanpham": [
+    {
+      "id": "ip1",
+      "name": "iphone x",
+      "price": 500,
+      "status": true
+    },
+    {
+      "id": "tab1",
+      "name": "ipad air",
+      "price": 480,
+      "status": false
+    },
+    {
+      "id": "ad1",
+      "name": "samsung s7",
+      "price": 460,
+      "status": false
+    }
+  ]
+}
