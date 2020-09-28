@@ -1,0 +1,9 @@
+Deploy (Heroku)
+1/ package.json
+"heroku-postbuild": "react-scripts start",
+"start": "node server.js",
+
+2/ ConfigConst.js
+API_URL = (process.env.NODE_ENV === 'production') ? `https://${process.env.REACT_APP_DOMAINNAME}:${process.env.PORT}` : 'http://localhost:3000'
+
+3/ server.js
