@@ -4,6 +4,7 @@ A) Deploy Heroku just ONLY for json-server, NOT for React app
     "json-server": "^0.16.1",
  }
 * HEROKU json-server:
+"heroku-postbuild": "react-scripts start",
 "start": "node server.js",
 (
 * React app:
