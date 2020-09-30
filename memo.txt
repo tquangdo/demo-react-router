@@ -9,6 +9,7 @@ A) Deploy Heroku just ONLY for json-server, NOT for React app
 (
 * React app:
 KO cần "start"!!! 
+"heroku-postbuild": "npm run build",
 
 2/ ConfigConst.js
 API_URL = (process.env.NODE_ENV === 'production') ? `https://${process.env.REACT_APP_DOMAINNAME}:${process.env.PORT}` : 'http://localhost:3000'
