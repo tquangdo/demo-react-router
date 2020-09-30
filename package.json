@@ -25,6 +25,7 @@
     "deploy": "gh-pages -d build",
     "json-server": "json-server --watch db.json",
     "dev": "concurrently \"set PORT=4321 && react-scripts start\" \"npm run json-server\"",
+    "heroku-postbuild": "react-scripts start",
     "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
