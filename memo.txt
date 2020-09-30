@@ -1,10 +1,10 @@
 A) Deploy Heroku just ONLY for json-server, NOT for React app
 1/ package.json
- "dependencies": {
+"homepage": "http://tquangdo.github.io/demo-react-router",
+"dependencies": {
     "json-server": "^0.16.1",
  }
 * HEROKU json-server:
-"heroku-postbuild": "react-scripts start",
 "start": "node server.js",
 (
 * React app:
