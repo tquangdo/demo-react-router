@@ -1,4 +1,4 @@
-Deploy Heroku just ONLY for json-server, NOT for React app
+A) Deploy Heroku just ONLY for json-server, NOT for React app
 1/ package.json
  "dependencies": {
     "json-server": "^0.16.1",
@@ -12,6 +12,24 @@ KO cần "start"!!!
 2/ ConfigConst.js
 API_URL = (process.env.NODE_ENV === 'production') ? `https://${process.env.REACT_APP_DOMAINNAME}:${process.env.PORT}` : 'http://localhost:3000'
 
-3/ server.js
+3/ tạo mới file "server".js
 
 4/ run cmd: $npm start
+  
+B) Dùng GIT "trangia@gmail.com" connect acc Heroku "tquangdo1103" (acc thứ 2 ngoài acc 1 "trangia61")
+1/ ~/.ssh$ ssh-keygen -t rsa
+đặt tên để tạo ra 2 file "id_rsa_heroku_tquangdo1103" & "id_rsa_heroku_tquangdo1103.pub"
+2/ heroku keys:ad
+chọn "id_rsa_heroku_tquangdo1103"
+3/ check: heroku keys
+-> hiện "id_rsa_heroku_tquangdo1103"
+4/ https://github.com/settings/keys
+click "New SSH key" > add "id_rsa_heroku_tquangdo1103.pub"
+4/ tạo file "~.ssh/config"
+Host heroku.work (chú ý phải là "heroku.work")
+  HostName heroku.com (chú ý phải là "heroku.com")
+  IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
+  IdentitiesOnly yes
+5/ edit file "~/.git/config"
+[remote "heroku"]
+   	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
