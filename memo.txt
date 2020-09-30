@@ -1,6 +1,5 @@
 A) Deploy Heroku just ONLY for json-server, NOT for React app
 1/ package.json
-"homepage": "http://tquangdo.github.io/demo-react-router",
 "dependencies": {
     "json-server": "^0.16.1",
  }
@@ -9,14 +8,10 @@ A) Deploy Heroku just ONLY for json-server, NOT for React app
 (
 * React app:
 KO cần "start"!!! 
-"heroku-postbuild": "npm run build",
 
-2/ ConfigConst.js
-API_URL = (process.env.NODE_ENV === 'production') ? `https://${process.env.REACT_APP_DOMAINNAME}:${process.env.PORT}` : 'http://localhost:3000'
+2/ tạo mới file "server.js" ("db.json" phải nằm ngoài cùng)
 
-3/ tạo mới file "server".js
-
-4/ run cmd: $npm start
+3/ run cmd: $npm start
   
 B) Dùng GIT "trangia@gmail.com" connect acc Heroku "tquangdo1103" (acc thứ 2 ngoài acc 1 "trangia61")
 1/ ~/.ssh$ ssh-keygen -t rsa
