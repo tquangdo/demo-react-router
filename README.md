@@ -23,4 +23,7 @@ react-ui% npm run dev
 - change port 3000 of BE in:
 1. `react-ui/src/redux/constants/ConfigConst.js: http://localhost:3000`
 2. `server/index.js: const portExpress = process.env.PORT || 3000`
-- change port 4321 of FE in `"dev": "concurrently \"PORT=4321 npm start\" \"npm run json-server\"",`
+- change port 4321 of FE in `react-ui/package.json`:
+```json
+"dev": "concurrently \"PORT=4321 npm start\" \"npm run json-server\"",
+```
