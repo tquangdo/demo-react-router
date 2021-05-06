@@ -1,5 +1,5 @@
 {
-  "name": "heroku-cra-node",
+  "name": "react-router-demo-sanpham",
   "version": "3.0.0",
   "description": "How to use create-react-app with a custom Node API on Heroku",
   "engines": {
@@ -14,8 +14,8 @@
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "json-server": "^0.16.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "json-server": "^0.16.1"
   },
   "keywords": [
     "node",

@@ -13,7 +13,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
-const portExpress = process.env.PORT || 3001
+const portExpress = process.env.PORT || 3000
 app.use(express.static(path.resolve(__dirname, '../react-ui/build')))
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'))

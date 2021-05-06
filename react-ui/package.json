@@ -1,5 +1,5 @@
 {
-  "name": "demo-react-router",
+  "name": "react-router-demo-sanpham-fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "json-server": "json-server --watch ../server/db.json",
-    "dev": "concurrently \"set PORT=4321 && react-scripts start\" \"npm run json-server\"",
+    "dev": "concurrently \"PORT=4321 react-scripts start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
